@@ -119,26 +119,60 @@
                                     <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fnk-jQ-09w"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="d11-Rl-aYB">
+                                <rect key="frame" x="67" y="164" width="280" height="41"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="8qV-LQ-hff"/>
+                                    <constraint firstAttribute="height" constant="40" id="yYO-a8-Ubf"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="StopWatch"/>
+                                    <segment title="Timer"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedSegmentTintColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentedTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="wmR-VP-Bfh"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="qzq-fV-ouG">
+                                <rect key="frame" x="18" y="229" width="378" height="41"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="OEL-Iq-RiZ"/>
+                                </constraints>
+                                <color key="thumbTintColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="nMv-yG-rUy"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="A4S-zE-ojW" firstAttribute="leading" secondItem="xNS-Ax-Rd3" secondAttribute="trailing" constant="30" id="05M-29-iXz"/>
                             <constraint firstItem="Wxh-la-tDm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1kd-8m-BlX"/>
+                            <constraint firstItem="qzq-fV-ouG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2Jo-AC-hqj"/>
+                            <constraint firstItem="qzq-fV-ouG" firstAttribute="top" secondItem="d11-Rl-aYB" secondAttribute="bottom" constant="25" id="3Ic-MB-aAI"/>
                             <constraint firstItem="VgD-jQ-Ah6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AsZ-Ap-zq2"/>
                             <constraint firstItem="xNS-Ax-Rd3" firstAttribute="leading" secondItem="YkP-SA-QeL" secondAttribute="trailing" constant="30" id="DBR-mZ-SDM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A4S-zE-ojW" secondAttribute="bottom" constant="30" id="DSP-yA-gGS"/>
                             <constraint firstItem="6Kh-iS-G4V" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="INv-2s-zNq"/>
+                            <constraint firstItem="d11-Rl-aYB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KMo-xX-JVy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xNS-Ax-Rd3" secondAttribute="bottom" constant="30" id="Mu0-09-dJq"/>
                             <constraint firstItem="Qn5-Sa-wdd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="P0g-g4-Eff"/>
                             <constraint firstItem="zHi-Ox-Qsm" firstAttribute="leading" secondItem="Wxh-la-tDm" secondAttribute="trailing" constant="10" id="UPA-lE-Wx9"/>
                             <constraint firstItem="Wxh-la-tDm" firstAttribute="leading" secondItem="6Kh-iS-G4V" secondAttribute="trailing" constant="10" id="UR3-Ud-9zF"/>
                             <constraint firstItem="xNS-Ax-Rd3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VHn-FW-aA8"/>
+                            <constraint firstItem="d11-Rl-aYB" firstAttribute="top" secondItem="Qn5-Sa-wdd" secondAttribute="bottom" constant="20" id="hRm-Lx-BfS"/>
                             <constraint firstItem="6Kh-iS-G4V" firstAttribute="leading" secondItem="3ow-We-fcI" secondAttribute="trailing" constant="10" id="ju3-m1-qFJ"/>
                             <constraint firstItem="3ow-We-fcI" firstAttribute="leading" secondItem="VgD-jQ-Ah6" secondAttribute="trailing" constant="10" id="l5Z-1i-5R6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YkP-SA-QeL" secondAttribute="bottom" constant="30" id="lkd-yy-yio"/>
+                            <constraint firstItem="qzq-fV-ouG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oCe-Zf-clb"/>
                             <constraint firstItem="Qn5-Sa-wdd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="obs-Nc-5JC"/>
                             <constraint firstItem="3ow-We-fcI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rD0-lS-QXR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qzq-fV-ouG" secondAttribute="trailing" constant="20" id="tOC-br-nCT"/>
                             <constraint firstItem="zHi-Ox-Qsm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vBR-Eu-a1x"/>
                             <constraint firstItem="6Kh-iS-G4V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x6W-u5-pPF"/>
                         </constraints>
@@ -149,6 +183,8 @@
                         <outlet property="pauseButton" destination="xNS-Ax-Rd3" id="Rv6-dy-HVk"/>
                         <outlet property="playButton" destination="A4S-zE-ojW" id="dau-fc-b07"/>
                         <outlet property="secondLabel" destination="zHi-Ox-Qsm" id="fVC-cM-aUx"/>
+                        <outlet property="segmentedControl" destination="d11-Rl-aYB" id="3o6-28-Fcg"/>
+                        <outlet property="slider" destination="qzq-fV-ouG" id="Tse-LZ-Id2"/>
                         <outlet property="stopButton" destination="YkP-SA-QeL" id="uP8-cx-pFo"/>
                     </connections>
                 </viewController>
